@@ -1,8 +1,16 @@
-if [ $# -eq 0 ]; then
+if [ $# == 0 ]
+then
     echo "No arguments supplied"
-else
-    # แสดงค่าของอาร์กิวเมนต์ (สูงสุด 3 ตัว)
+elif [ $# == 1 ]
+then
     echo "$1"
-    [ ! -z "$2" ] && echo "$2"
-    [ ! -z "$3" ] && echo "$3"
+elif [ $# == 2 ]
+then
+    echo "$1"
+    echo "$2"
+else 
+    echo "$1"
+    echo "$2"
+    echo "$3"
+
 fi
