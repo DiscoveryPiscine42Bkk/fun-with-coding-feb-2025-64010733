@@ -31,12 +31,12 @@
         let colorIndex = 0;
 
         balloon.addEventListener("click", function() {
-            size += 10; // ขยายลูกโป่ง
-            colorIndex = (colorIndex + 1) % colors.length; // เปลี่ยนสีถัดไป
+            size += 10; 
+            colorIndex = (colorIndex + 1) % colors.length; 
 
             if (size > 420) {
-                size = 200; // รีเซ็ตขนาดเมื่อเกิน 420px
-                colorIndex = 0; // กลับเป็นสีแดง
+                size = 200; 
+                colorIndex = 0; 
             }
 
             balloon.style.width = size + "px";
@@ -46,8 +46,8 @@
 
         balloon.addEventListener("mouseleave", function() {
             if (size > 200) {
-                size -= 5; // ลดขนาด
-                colorIndex = (colorIndex - 1 + colors.length) % colors.length; // เปลี่ยนสีถอยหลัง
+                size -= 5; 
+                colorIndex = (colorIndex - 1 + colors.length) % colors.length; 
             }
 
             balloon.style.width = size + "px";
